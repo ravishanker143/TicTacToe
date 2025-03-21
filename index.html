@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Responsive Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tic-Tac-Toe</h1>
+            <div class="player-inputs">
+                <input type="text" id="player1" placeholder="Player 1 (X)" />
+                <input type="text" id="player2" placeholder="Player 2 (O)" />
+                <button onclick="startGame()">Start Game</button>
+            </div>
+        </header>
+
+        <div class="game-board">
+            <div class="cell" id="0" onclick="makeMove(0)"></div>
+            <div class="cell" id="1" onclick="makeMove(1)"></div>
+            <div class="cell" id="2" onclick="makeMove(2)"></div>
+            <div class="cell" id="3" onclick="makeMove(3)"></div>
+            <div class="cell" id="4" onclick="makeMove(4)"></div>
+            <div class="cell" id="5" onclick="makeMove(5)"></div>
+            <div class="cell" id="6" onclick="makeMove(6)"></div>
+            <div class="cell" id="7" onclick="makeMove(7)"></div>
+            <div class="cell" id="8" onclick="makeMove(8)"></div>
+        </div>
+
+        <div class="game-info">
+            <p id="game-status">Enter player names to start!</p>
+            <button onclick="restartGame()">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
